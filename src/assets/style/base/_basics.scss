@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color: $clr3;
+    font-family: roboto, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6,p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: robotoBold, sans-serif;
+    font-size: rem(38px);
+    color: $clr2;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: $clr1;
+    color: $clr4;
+}
+
+p {
+    max-width: 60ch;
+}
+
+hr {
+    background-color: rgba($color: $clr2, $alpha: .2);
+    height: 1px;
+    border: none;
+    margin-bottom: $baseMargin;
+}

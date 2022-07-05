@@ -1,0 +1,22 @@
+.popular {
+    font-size: rem(12px);
+    color: $clr4;
+    .container {
+        gap: 15px;
+        ul {
+            gap: 15px;
+            li {
+                padding: 5px 20px;
+                border-radius: 50px;
+                border: 1px solid $clr4;
+                cursor: pointer;
+                transition: all .2s;
+
+                &:hover {
+                    background-color: $clr4;
+                    color: $clr3;
+                }
+            }
+        }
+    }
+}

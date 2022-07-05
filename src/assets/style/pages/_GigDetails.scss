@@ -1,0 +1,142 @@
+.gig-details {
+    padding-top: 20px;
+    margin-bottom: $baseMargin;
+    .wrraper {
+        position: relative;
+        flex-direction: column;
+
+        @include for-normal-layout {
+            flex-direction: row;
+        }
+
+        .info {
+            flex-basis: 50%;
+            h1 {
+                font-size: rem(25px);
+                margin-bottom: $baseMargin;
+            }
+            .img-name-container {
+                gap: 10px;
+                .img-container {
+                    width: 30px;
+                    height: 30px;
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            p {
+                font-size: rem(14px);
+                span {
+                    color: $clr5
+                }
+            }
+
+            .btn-img-container {
+                position: relative;
+                .btn-plus {
+                    z-index: 1;
+                    position: absolute;
+                    top: 50%;
+                    right: -17px;
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    transform: translateY(-50%);
+                    background-color: $clr4;
+                    border: $border;
+                    color: $clr3;
+                    box-shadow: 0px 0px 10px rgba($color: $clr3, $alpha: .5);
+                }
+                .btn-minus {
+                    z-index: 1;
+                    position: absolute;
+                    top: 50%;
+                    left: -17px;
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    transform: translateY(-50%);
+                    background-color: $clr4;
+                    border: $border;
+                    color: $clr3;
+                    box-shadow: 0px 0px 10px rgba($color: $clr3, $alpha: .5);
+                }
+            }
+
+                .img-container{
+                    position: relative;
+                    overflow: hidden;
+                    margin-bottom: rem(10px);
+                    img {
+                        transition: all ease-in .2s;
+                        &:hover {
+                            transform: scale(110%);
+                            // width: 120%;
+                        }
+                    }
+            
+            }
+
+            .tumbnails-container {
+                gap: 5px;
+                margin-bottom: $baseMargin;
+
+                .img-holder {
+                    cursor: pointer;
+                    max-width: 100px;
+                }
+            }
+
+            .recomandeds {
+                position: relative;
+                .add-review-btn {
+                    position: absolute;
+                    bottom: -15px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    padding: 7px 20px;
+                    border-radius: 5px;
+                    font-family: robotoBold, sans-serif;
+                    transition: all .2s;
+
+                    &:hover {
+                        background-color: darken($clr1, 10%);
+                    }
+                }
+            }
+        }
+
+        aside {
+            flex-basis: 40%;
+            position: sticky;
+            top: 100px;
+            height: 300px;
+            border: $border;
+            padding: 30px;
+
+            .wrraper {
+                .container {
+                    gap: 5px;
+                    h2 {
+                        font-size: rem(18px);
+                    }
+                    p {
+                        font-size: rem(14px);
+                    }
+                }
+                .tags {
+                    font-size: rem(12px);
+                }
+            }
+
+            button {
+                padding: 10px;
+                border-radius: 5px;
+                margin: 10px;
+                font-family: robotoBold, sans-serif;
+            }
+        }
+    }
+}

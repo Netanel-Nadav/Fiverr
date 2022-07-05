@@ -1,0 +1,137 @@
+header {
+    border-bottom: $border;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    // margin-bottom: $baseMargin;
+    color: $clr2;
+    nav {
+        background-color: transparent;
+        height: 65px;
+        .logo-container {
+            h1{
+                font-size: rem(25px);
+                span {
+                    color: $clr1;
+                }
+            }
+        }
+    
+        .main-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #000000, $alpha: .75);
+            display: none;
+            cursor: pointer;
+
+            &.open {
+                display: block;
+                
+                @include for-normal-layout {
+                    display: none;
+                }
+            }
+
+        }
+
+        .burger {
+            gap: 2px;
+            cursor: pointer;
+            span {
+                width: 20px;
+                height: 4px;
+                border-radius: 50px;
+                background-color: black;
+            }
+
+            @include for-normal-layout {
+                display: none;
+            }
+        }
+
+
+        ul {
+            position: fixed;
+            height: 100%;
+            gap: 20px;
+            z-index: 1;
+            background-color: #fff;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            box-shadow: 0px 0px 10px black;
+            justify-content: center;
+            transform: translateX(-120%);
+            transition: all .3s;
+
+            &.open {
+                transform: translateX(0%);
+            }
+            
+            @include for-normal-layout {
+                position: relative;
+                flex-direction: row;
+                height: 65px;
+                width: unset;
+                box-shadow: unset;
+                transform: unset;
+                background-color: unset;
+            }
+            
+            li {
+                text-align: center;
+                
+                @include for-normal-layout {
+                    border-bottom: none;
+                    width: unset;
+                }
+
+
+                a {
+                    font-size: rem(14px);
+                    transition: all .2s;
+                    display: block;
+                    height: 65px;
+                    
+                    &.active {
+                        box-shadow: inset 0px -2px 0px $clr1;
+                    }
+    
+                    &:hover {
+                        color: $clr1;
+                    }
+                    
+                    @include for-normal-layout {
+                        line-height: 65px;
+                        
+                    }
+                }
+            }
+            button {
+                padding: 5px 20px;
+                border-radius: 5px;
+                background-color: $clr4;
+                border: 1px solid $clr1;
+                color: $clr1;
+                font-family: robotoBold, sans-serif;
+                transition: all .2s;
+    
+                &:hover {
+                    background-color: $clr1;
+                    color: $clr4;
+                }
+            }
+        }
+        &.scroll {
+            background-color: $clr4;
+            color: $clr3;
+        }
+    
+
+}
+}

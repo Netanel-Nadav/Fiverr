@@ -1,0 +1,17 @@
+.card {
+    cursor: pointer;
+    height: 250px;
+    color: $clr4;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    text-transform: capitalize;
+
+    transition: all .2s;
+    
+    &:hover {
+        opacity: 0.8;
+    }
+}

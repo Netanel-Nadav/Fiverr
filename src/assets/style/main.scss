@@ -1,0 +1,39 @@
+// SETUP
+
+@import "setup/variables";
+@import "setup/functions";
+@import "setup/mixins";
+@import "setup/typography";
+
+
+
+// BASE
+
+@import "base/basics";
+@import "base/helpers";
+@import "base/layout";
+@import "base/card";
+
+
+// PAGES
+
+@import "pages/LogoDesign";
+@import "pages/Login";
+@import "pages/MyProfile";
+@import "pages/BecomeASeller";
+@import "pages/GigDetails.scss";
+
+
+// CMPS
+
+@import "components/AddReviewModal";
+@import "components/OrderList";
+@import "components/OrderPreview";
+@import "components/FilterBy.scss";
+@import "components/Reviews";
+@import "components/Services";
+@import "components/Navigation";
+@import "components/Hero";
+@import "components/Popular";
+@import "components/Search";
+@import "components/GigPreview";

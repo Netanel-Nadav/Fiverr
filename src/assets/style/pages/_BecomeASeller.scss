@@ -1,0 +1,65 @@
+.become-a-seller {
+    position: relative;
+    height: 100%;
+    padding: 20px;
+    form {
+        width: 70%;
+        margin: 0 auto;
+        gap: 10px;
+        label {
+            span {
+                font-size: rem(14px);
+            }
+            input {
+                padding: 7px 10px;
+                border: $border;
+                border-radius: 3px;
+                &:focus {
+                    outline-color: $clr1;
+                }
+            }
+            input[type=file]{
+                display: none;
+            }
+        }
+
+        .imgs-wrraper {
+            gap: 10px;
+            .img-container {
+                width: 100px;
+            }
+        }
+
+        button {
+            width: 200px;
+            margin: 0 auto;
+            padding: 7px 10px;
+            border-radius: 50px;
+
+        }
+
+        .upload {
+            text-align: center;
+            // background-color: $clr2;
+            width: 70px;
+            height: 70px;
+            margin: 0 auto;
+            border-radius: 50%;
+            position: relative;
+            border: $border;
+            cursor: pointer;
+                i {
+                    color: $clr2;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+        }
+
+        .wrraper {
+            gap: 10px;
+            margin-bottom: $baseMargin;
+        }
+    }
+}

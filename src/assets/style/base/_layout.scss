@@ -1,0 +1,45 @@
+.main-container {
+    display: grid;
+    grid-template-columns: $layoutPadding 1fr $layoutPadding;
+    // grid-template-rows: 65px 1fr;
+
+    > * {
+        grid-column: 2;
+    }
+
+    > *.full {
+        grid-column: 1 / -1;
+    }
+
+    header {
+        grid-row: 1 / 2;
+    }
+    main {
+        grid-row: 2;
+    }
+
+    @include for-narrow-layout {
+        @include layoutGTC($break-narrow)
+    }
+
+    @include for-normal-layout {
+        @include layoutGTC($break-normal)
+    }
+
+    @include for-wide-layout {
+        @include layoutGTC($break-wide)
+
+    }
+}
+
+
+
+.grid-card {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+
+    .servcies & {
+        grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+    }
+}

@@ -1,0 +1,49 @@
+.add-review {
+    position: fixed;
+    z-index: 10000000;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    .main-screen {
+        background-color: rgba(#000, .8);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        cursor: pointer;
+    }
+    .wrraper {
+        width: 80%;
+        h2 {
+            color: $clr4;
+            text-align: center;
+            margin-bottom: $baseMargin;
+        }
+
+        textarea {
+            font-family: robotoLight, sans-serif;
+            margin-bottom: $baseMargin;
+            padding: 10px;
+            &:focus {
+                outline: unset;
+            }
+        }
+        .container {
+            gap: 10px;
+            input {
+                flex-basis: 60%;
+                padding: 5px;
+
+            }
+            button {
+                flex-basis: 40%;
+                border-radius: 3px;
+                transition: background .2s;
+                &:hover {
+                    background-color: darken($clr1, 10%);
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,22 @@
+.hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    margin-bottom: $baseMargin;
+    align-content: center;
+
+    transition: all ease-in-out .3s;
+    .wrraper {
+        h1 {
+            max-width: 25ch;
+            margin-bottom: $baseMargin;
+            color: $clr4;
+        }
+
+        form {
+            margin-bottom: $baseMargin;
+        }
+    }
+    
+}

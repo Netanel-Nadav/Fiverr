@@ -1,0 +1,27 @@
+.servcies {
+    position: relative;
+    margin-bottom: $baseMargin;
+    h1 {
+        margin-bottom: $baseMargin;
+    }
+    .switch-categories {
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        background-color: $clr4;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px rgba($color: $clr3, $alpha: .5);
+        color: $clr3;
+        font-size: rem(20px);
+        transform: translateY(50%);
+    }
+    .minus {
+        left: -20px;
+    }
+
+    .plus {
+        right: 130px;
+    }
+}

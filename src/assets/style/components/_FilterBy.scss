@@ -1,0 +1,50 @@
+.filter-by {
+    position: relative;
+    margin-bottom: $baseMargin;
+    gap: 10px;
+    transition: all ease-in-out .2s;
+    button {
+        padding: 10px 30px;
+        border-radius: 5px;
+        background-color: $clr4;
+        border: $border;
+        color: $clr3;
+
+        &::after {
+            content: '';
+        }
+    }
+    .filter-by-price {
+        position: absolute;
+        top: 120%;
+        background-color: $clr4;
+        z-index: 10;
+        border-radius: 5px;
+        padding: 20px;
+        width: 250px;
+        border: $border;
+        box-shadow: 0px 0px 10px rgba($color: $clr2, $alpha: .2);
+        form {
+            gap: 10px;
+            label {
+                font-size: rem(12px);
+            }
+            input {
+                width: 100%;
+            }
+        }
+    }
+    .dellvery-time {
+        position: absolute;
+        top: 120%;
+        background-color: white;
+        padding: 20px;
+        z-index: 10;
+        left: 120px;
+        width: 200px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba($color: $clr2, $alpha: .2);
+        gap: 10px;
+    }
+
+}
